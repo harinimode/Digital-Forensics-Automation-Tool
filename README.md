@@ -37,6 +37,8 @@ Digital-Forensics-Automation-Tool/
 
 # Clone the repository
 git clone https://github.com/harinimode/Digital-Forensics-Automation-Tool.git
+
+
 cd Digital-Forensics-Automation-Tool
 
 # (Optional) Create a virtual environment
