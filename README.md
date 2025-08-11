@@ -14,7 +14,6 @@ A Python-based command-line digital forensics toolkit designed to automate essen
 
 📂 File Structure
 Digital-Forensics-Automation-Tool/
-│
 ├── forensic.py                  # Main CLI script
 ├── README.md                    # Project documentation
 ├── requirements.txt             # Python dependencies (if any)
@@ -34,6 +33,7 @@ Digital-Forensics-Automation-Tool/
 │
 └── tests/                       # Unit / integration tests
     └── test_forensic.py
+
 
 # Clone the repository
 git clone https://github.com/harinimode/Digital-Forensics-Automation-Tool.git
