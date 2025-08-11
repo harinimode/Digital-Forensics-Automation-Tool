@@ -13,18 +13,28 @@ A Python-based command-line digital forensics toolkit designed to automate essen
 📜 Log Analysis – Detect ERROR and WARNING messages from logs.
 
 📂 File Structure
-bash
-Copy code
 Digital-Forensics-Automation-Tool/
 │
-├── forensic.py                 # Main forensic tool script
+├── forensic.py                    # Main CLI script (your provided code)
+├── README.md                      # Project documentation
+├── requirements.txt               # Python deps (if any; can be empty)
+├── LICENSE                        # e.g., MIT License
+├── .gitignore                     # ignore venv, __pycache__, .DS_Store, etc.
+│
+├── samples/                       # Example/sample files for testing
+│   ├── system.log
+│   ├── tampered_system.log
+│   └── test_image.img
+│
+├── docs/                          # Additional docs / PDFs / references
+│   └── DIGITAL_FORENSICS2.pdf
+│
+├── examples/                      # Example commands / usage scripts
+│   └── sample_commands.txt
+│
+└── tests/                         # Optional: unit / integration tests
+    └── test_forensic.py
 
-├── README.md                   # Project documentation
-├── sample.log                   # Example log file for testing
-└── requirements.txt            # Optional dependencies file
-⚙️ Installation
-bash
-Copy code
 # Clone the repository
 git clone https://github.com/harinimode/Digital-Forensics-Automation-Tool.git
 cd Digital-Forensics-Automation-Tool
