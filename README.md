@@ -18,6 +18,7 @@ Copy code
 Digital-Forensics-Automation-Tool/
 │
 ├── forensic.py                 # Main forensic tool script
+
 ├── README.md                   # Project documentation
 ├── sample.log                   # Example log file for testing
 └── requirements.txt            # Optional dependencies file
