@@ -45,7 +45,11 @@ cd Digital-Forensics-Automation-Tool
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
+
+
 ▶️ Usage
+
+
 Run the tool using Python with the following commands:
 
 1. Create a Disk Image
