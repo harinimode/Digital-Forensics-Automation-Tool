@@ -15,25 +15,25 @@ A Python-based command-line digital forensics toolkit designed to automate essen
 📂 File Structure
 Digital-Forensics-Automation-Tool/
 │
-├── forensic.py                    # Main CLI script (your provided code)
-├── README.md                      # Project documentation
-├── requirements.txt               # Python deps (if any; can be empty)
-├── LICENSE                        # e.g., MIT License
-├── .gitignore                     # ignore venv, __pycache__, .DS_Store, etc.
+├── forensic.py # Main CLI script
+├── README.md # Project documentation
+├── requirements.txt # Python dependencies (if any)
+├── LICENSE # License file (e.g., MIT)
+├── .gitignore # Ignore venv, pycache, etc.
 │
-├── samples/                       # Example/sample files for testing
-│   ├── system.log
-│   ├── tampered_system.log
-│   └── test_image.img
+├── samples/ # Example/sample files for testing
+│ ├── system.log
+│ ├── tampered_system.log
+│ └── test_image.img
 │
-├── docs/                          # Additional docs / PDFs / references
-│   └── DIGITAL_FORENSICS2.pdf
+├── docs/ # Documentation and reference materials
+│ └── DIGITAL_FORENSICS2.pdf
 │
-├── examples/                      # Example commands / usage scripts
-│   └── sample_commands.txt
+├── examples/ # Example usage scripts
+│ └── sample_commands.txt
 │
-└── tests/                         # Optional: unit / integration tests
-    └── test_forensic.py
+└── tests/ # Unit / integration tests
+└── test_forensic.py
 
 # Clone the repository
 git clone https://github.com/harinimode/Digital-Forensics-Automation-Tool.git
