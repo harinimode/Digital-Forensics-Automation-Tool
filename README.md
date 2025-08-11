@@ -1,34 +1,58 @@
-# Digital-Forensics
-Case Scenario: Digital Forensics Investigation Using the Digital Forensic Tool
-Incident Overview
-A financial organization detected anomalies in its security logs, raising concerns about unauthorized access and potential data tampering. Employees reported unusual modifications in critical financial documents, prompting an urgent forensic investigation.
-This repository provides a powerful suite of tools for digital forensic investigations, enabling professionals to analyze digital evidence with precision.
-💻 Usage Scenarios(**Python Code:forensic.py )
-1️⃣ Creating a Forensic Disk Image
-Use this tool to create an exact copy of a disk for forensic analysis:
+🔍 Digital Forensics Automation Tool
+A Python-based command-line digital forensics toolkit designed to automate essential investigation tasks like disk imaging, file hashing, integrity checks, metadata extraction, and log analysis. Ideal for incident response, evidence validation, and forensic analysis.
 
-sudo python forensic_tool.py --image /dev/sdb disk_image.img
-This ensures that investigators can analyze the disk without altering the original data.
-For more in detail check ouut the digital_forensics-1,2 pdf for more detailed information...
-2️⃣ Verifying File Integrity
-To generate and verify cryptographic hashes, use:
+📌 Features
+🖴 Disk Imaging – Create bit-by-bit copies of drives using dd.
 
-python forensic_tool.py --hash example.txt sha256
-python forensic_tool.py --compare original.txt copy.txt sha256
-This helps in detecting any unauthorized modifications in digital evidence.
+🔑 Hash Generation – Supports MD5, SHA1, SHA256, SHA512, and BLAKE2b.
 
-3️⃣ Extracting Metadata from Files
-Retrieve metadata such as file creation time, size, and last modification date:
+📂 Integrity Verification – Compare two files’ hashes to detect tampering.
 
-python forensic_tool.py --meta document.pdf
-Useful for tracking file manipulations and timestamps.
+📊 Metadata Extraction – Retrieve file name, size, creation, and modification timestamps.
 
-4️⃣ Analyzing Log Files for Security Threats
-Scan logs for potential security breaches, such as unauthorized access attempts:
+📜 Log Analysis – Detect ERROR and WARNING messages from logs.
 
-python forensic_tool.py --log system.log
-Helps identify anomalies in security logs and detect potential cyber threats.
+📂 File Structure
+bash
+Copy code
+Digital-Forensics-Automation-Tool/
+│
+├── forensic.py                 # Main forensic tool script
+├── README.md                   # Project documentation
+├── sample.log                   # Example log file for testing
+└── requirements.txt            # Optional dependencies file
+⚙️ Installation
+bash
+Copy code
+# Clone the repository
+git clone https://github.com/harinimode/Digital-Forensics-Automation-Tool.git
+cd Digital-Forensics-Automation-Tool
 
-📜 Legal & Ethical Considerations
-This toolkit is intended for ethical forensic investigations and cybersecurity research. Users must ensure compliance with legal frameworks and organizational policies before conducting forensic activities.
+# (Optional) Create a virtual environment
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+▶️ Usage
+Run the tool using Python with the following commands:
+
+1. Create a Disk Image
+sudo python forensic.py --image /dev/sda /path/to/output.img
+2. Generate a File Hash
+python forensic.py --hash file.txt sha256
+3. Compare Two Files
+python forensic.py --compare file1.txt file2.txt sha256
+4. Extract Metadata
+python forensic.py --meta file.txt
+5. Analyze Log Files
+python forensic.py --log system.log
+
+📜 Legal Disclaimer
+This tool is intended only for ethical and lawful purposes. The author is not responsible for any misuse. Always have proper authorization before conducting forensic activities.
+
+🚀 Future Improvements
+Add GUI/Web Interface for ease of use
+
+Support network forensics
+
+Include report generation in PDF/HTML format
 
